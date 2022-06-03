@@ -20,5 +20,10 @@
   -RoSa enters payment information and checks out each customer. 
   -RoSa creates an expense report for each customer and emails it to them. 
   -RoSa then generates a profit report and sends it to the automation owner. 
+  
+  # Getting Started
+   -Clone the repo: https://github.com/aramcj/ProjectOne.git
+   -Open the Test_Main2.xaml file. 
+   -Click Run. 
 
 **Current working version of RoSa is Test_Main2.xaml**
