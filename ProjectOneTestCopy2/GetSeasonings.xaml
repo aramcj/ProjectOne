@@ -1,0 +1,153 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="GetSeasonings" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1278,1861" sap2010:WorkflowViewState.IdRef="GetSeasonings_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="31">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="23">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="This gets you to the Seasons menu on the Pega website. &#xA;" DisplayName="GetSeasonings" sap:VirtualizedContainerService.HintSize="518,1796" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dtSeasonings" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Home | Pega Studio Training Web Application" sap:VirtualizedContainerService.HintSize="476,682" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,466" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Products'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://training.openspan.com/home" DesignTimeRectangle="672, 154, 47, 14" ElementType="Text" FriendlyName="'Products'" FullSelectorArgument="&lt;webctrl parentid='products_menu' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='products_menu' tag='A' type='' aaname='Products' check:text='Products' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADMAAAASCAYAAAD2Uea5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFDSURBVEhL7ZOxFYNACIYdztaMks7SAVzAzjIT2Fq4gF269BkgCxCB4w5O8y7GFCbP4n/PAwQ+uMuu9wf8iw6Yvep/YS5lBlkWq4KLivlIXbUpD/aVN7dFn9YcpuxNwNCcZrbV2gsMNVK0MNxvUBdT0mKCmzZ27tDPNtki25zGFnKxlwrG5+O4eFj6dmA+8rszA9maGjIJE2wuSVxYGqPpn6Ae0dfDWRXiBtMwBoyGwf/g/5LLwmOdsPH0m/GF3Wb8JPgctqH8qhHy6fNLmDhf0GsYq/Q184qL8fR1cV+UtrQWZp5PpGHkLMPW8RtgvrOZUPO9zVjhAORqb4Jx8dIYbUMSKzCJ0zDR25Kapj4NgOM0jP5Ov5kVMGJbWjk3w/a8aU1RhkNVUJs3sJyPriLlQQg3gCgGZWB+XQfMXnXA7FMPeAI+NeH3EL3hzAAAAABJRU5ErkJggg==" InformativeScreenshot="88470f98d70f25b4dd93d40cc754d634.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home | Pega Studio Training Web Application' /&gt;" SearchSteps="FuzzySelector, Image" Text="Products" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='A' type='' /&gt;" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://training.openspan.com/products" DesignTimeRectangle="1093, 335, 128, 128" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl parentid='my-seasonings-table' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='my-seasonings-table' tag='IMG' type='' aaname='Seasonings' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAYAAABRRIOnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABcoSURBVHhe7Z15VFR3lsfn/57uyUyfmTl9unumlzMz5yQxMdExJmY0HWMnalyiBo2alphNg0EUDW4RBAmomGgU94WocQN32WQTBUFlFRBEdtmLtQoL0KS/8+6DwirqFtTyXtUrrHvO56BUveV375ffvvwDXOYyPXMJwmUG9tQI4tFPf0ed5hFKW7twV6VFdv1DpFVrcLVCjdjSNhH6N/2OPqPv0HfpGrr2abEhJ4jOxz/jXlMnrlWqEX63GTtvN8A3uRqeUWX4MqbCKuja9cI9dmU0IKKwWbz3veZO8VlDzZxeEN3CX2+hIICL91oRklaHpbHWB95S6Fkh6XW4VNyKIuEd6F2c3ZxSEOrun8TsfdvNenhFV7LBcgSeVyqx7VY9koUcRCO8ozOa0wji0c9/R1bdQ+wVsm175gJWE12OPZkNYn2E3t1ZTPGCqO94hJMFzfjqShXveCdgRXwVTglpaBDSonRTrCCq1d04lNNoU2VQaVBaDueoUCOkTammOEGUCU29PZn1rEOHEvuyGlDR1tWbauWYYgShevgYu4Uyl3PeUIbqGU3ax71ecLw5XBBU4Yq634qlQg2dc9jTwPKYSsSUtOGxAiqfDhVEgUoL32sPWCc9jfglV6OwSdvrHceYQwShffyzWLninOKiAj8IviEfOcLsLojKtm74JTlvE9JeUM5Z1W7/1ojdBEGlY1KFWlE9i0qHej5p3MSeNQu7COLho5+xP6uRTbSLwTmQ3Wi3IkR2QTQLTaqA6zVsQl2Yz0bBhy2d8jdPZRVEreYR1iW4igipWHv1gdiVL6fJJgiaXEJ9+FzCXFjPyrgKlAu+lctkEUReo1bsbOES5MJ2vOLKUSD4WA6TXBAkBqcYnnZ2ouURhaSCoGLClTPYD28hp5C6+JBMEFSBdNUZ7A/VKaSsaEoiCGpauloTjoNaH1I1SW0WBHU6+bv6GRxOQMoDSTqvbBIEdanuc/VAKgbq0bS1m9smQdDYBPdiLhwHjX3YYlYLgkYtXQNVyoMGxB7YMEpqlSCorKKVTNwLuXA8NHRu7aoyqwThmtwiD0tjK+CXUIFlwk/uc0sIy23sjZZlZrEgaNob9wIubGN9fAWSsspxt6AcuSX1oji471kCLS+01CwSBE2Idc2BlBYK/MEb5cjL7xED0djYCp942+tnNO3A0om7FgkiqqSNfbAL6/haKB4Se3MFfR40Std6o20OLDGzBUHrJp7mqfJSIuYKqRW4o5cr6KiqrMflu9KtT6GRUepJNtfMFsTTsojGO7YEG+LzEJKYgdDkGzh0LRnHrscjPCUW525E4+KNy4hMu4jotAuITTuPK2nnxJ/0/8s3LuF8ahROpVxB2LWr2HX1BjYnZmJNXCE8e+9vKlfQ0dislqRSqQ91HpprZgmCltdxD3JWlsaUISghRwwaBTLz9lGUZ+9B252t6MoPlgVNfghK78SgIL+UFQJRWlKDW+Ut7DvbCvUbmWNmCWIorLUMTswW/7oLMw9Ck7eFDZpcaPJDUVpwmxWBPk1N7ViTIM+IMU1yNscGFQStwuYe4CzsT76O0qy9bKBkp2ATGvLPobCghBWAPqUl1VDVlWK3UMxw6ZCCGvXgw+SDCoKW5HM3Vzo+V4qRk/EDHyg70JMr3GKDz9HW0gbt3R3itck3I/rqHFISlqvqjappG1AQNPHCGfdnoIqhM+QKOioq6qCuzTK4D1VgubTZwpLYMjQKrcWBbEBB0M4t3I2VzoUbkQbOJTpvr0Fn6lKj30uJJn8nysyoK+hTeLcC6rYWdBZsNrhXa95WeMWUs+mzBdrJZiAzKQjqlXTWbXyKs/YZOJcgMWgT3A1/l+uPjpNjoT74PDoiJqArL8jgc/MRcoWCsyjMNz9X0NHQ0AJN6QXmnsHwT8hj02cLPkKzd6DeS5OCoA2+uBs6A6WJ/qyDjcjegI5jo6He+1+iMLryvuG/NwDW5Ao6qCKpVpWz9+3M2yTWg7j02UpO/cPeKBubSUHQbm/czZyBmLCvWCdLi/W5AtFTVLQKFcntzL2DkXLzFJs2KRioCcoKgvaBdOa1FVt2bYPqqmlRUPGhOfF/7GfmYEuuoKNJ1YqOknD2/uq8ECF3uMemTQpoYlNHNz9fghUEbQrK3chZ8D12Edmh01ln2wblCmeszhV0VFc3Ql2Tydy/h/zMw2y6pMTUVDtWELRDLHcTZ8H7Yi6uB4xjnW0tPbmC+f0KpigrrYG6qYp9ho7cjDA2XVKyXYgxZ0aCoP2ah8JcyTi/8ayzLYf6Fc6gqOA+G2BLKLn/AJpWldDE/JZ5zhPuZh5k0yQlNHLN7bBrJAjaSJy7gbNxbqMb62xL6KBcId/2XIEovlcFTVsLtIXfs8/Sxx6CIIqbjWdUGQniYnEre7EzsTEuE7FbZ7PONo9NaMyPkCRXIJ6IYQ/zLGOK7CSIy/dbe6P+xIwEQUcMcBcrnVWxhQhPOovy1I14dNMTRfumss4eDDFXKLjJBtYa7hcLxURbMzoLQ9nncdzLOsCmUWq2ptX2Rv2JGQiCptdTfzd3sVIJiU9D+vXd0KYvE4Wgoy3uU9bZpqFcQZq6go7yslqoW1R4eHfwYkKf+9n72LRKTnQ5uvpN1zcQBJ1Ew16oMDxjyrEnIQHFqUEGIjDglvnjFh0FOyTNFYgaoWnZrioXKpCWz72gyTpcuuWgfz3CQBDUNuUuUhIkhMob/rwIDDBHEEKuUCBdXYEoKqxAc1Mb1NW3meeZR03OTjbtcnC9yrA/wkAQdEYVd5ES2BR3C/dSNzGBN8EgOYQcuYLYx9DajI77x9lnmosqdxvrAzk4U9jSG/0eMxAEHVjGXeRIVsQUI/HaYXSnL+UDb4pbXqyz5ckVKsWuaHV9ETrv2j4vk7quOV/Iwe6Mht7o95iBIOj0Ou4iRxEUdxt1N9bzAR+EbkYQHfk7UF6QzgbVWmqqVVA316Oj+IjR82yBJgJzPpEav+Sq3uj3WJ8g6GxKJc2O2pGQjI50bzbYZqEniPqbG1GQelTSXEGsNDY3QFMWZRBIqVgl4+CWPtSq1J8f0ScIOrCUu8ARUM4wkBi6UxahK2E+ulMXsZ+L3F6GzrwgnNjvjd+9OhW/fW0mbqTls8E1l3tFVaiva0ZbU51sQtARmJDL+kYO9Peo6hME7SDHfdneeMaWC62IAD7IAt1pX0Cz97+h3v0n8Wd3mgf7vQfxnpj90Xz84vl3+pjjsYEN9EDQvAVaTdWsakZ7wz103LPPxN3tV2+y/pED/Z3s+gRBRxtzX7Y3uxMS2QDr0xXrBu25Cei64mb0WXe6J45/747fvTLZQAw6jpyO6Qs2dSlTHaChth6NNeVQVRej4UExaitLUfOgAc2NKkEEJVCXXkJnvuGcR7kJu5bE+kcOaPxKZ32CoPMluS/bm8xIX6Mgm0tdvAc+cJ/FCkHHsxPmoaioEi0qIdi12egoOsQGpDPfvot5+iPHrGtT6E+p6xMEHYLOfdneFF/0YoM9EJQrnNzxEf7zVT5X0PHHMbPg7uGJqMun7P4XbymJ6WdY/8jBzRpNrwr0BKGUWVJZYR+zQTdF4cXFmDJ7BisAHb8ZNR1Lv1qJd+bMx5/HTkNxkp+B87XXhHpJ2MvQHB4ObZKlYyDykHH7GOsfOaCjqXXWJwjaR4D7sr2JD5gOVYRx3aA/qqQl8PGei2denMiKQMe8RZ5Y6PEF/jBmKrYGe6Aly3hmtfbqZ1AfeA6a/c9CG7/A6HNHUJy5n/WPHFzR20NCcYJI8J2MbO9nUeg/CurYhUZC0KR8ie8DP8TvR0/Gr16YhBcnLRR/9hfCb0ZNxdcbvsbLb8/C4qUfoS4tgHW8UqnN3cH6Rw5YQSilyIjzmyoKgshb+xI6U74QhdCV1tN6ePaNKX1BP3QiSmwtvDrDw0AM42Z8iBU+y/H8WzMQe8KHdbjSac/byvpHDtgiQymVytNbPfsEQVTtm4TIA59g9KRpBkEnJrp/hbfmLTf43WKvpZi70B3T57k5Xa7QHy87zU1hK5VKaXauupCBa1+/KYrh2McvYczYvxgE3BT/OOwd+G9YizemvQ//1XPRmbmWdbIzsdpO3ddss1MpHVPEZ0eu4q2JT4qGwfjlsEn4xncFRvx1Ok4JzU8qYrqznV8QfvH5rH+khu2YUkLX9eILRXjNcxt+9eLA/Qn6/HLYRGwOWo9XJr6H5GOf9lU+h4IgAhNyWD9JDdt17dDBrehyTN1yDv/22hw26KagnGFLsC/Gz5iFO2c/7xNDjyDWsU6WjTuB6Dg/GZqj/yv8nGLVwuH+bErM5v0lMezglqOGvz8Jv4Pn5qxiAz4QzwyfhJDN/pjs9j7uRy42EIMoiCz75hCdORugOTS8Z9AtTGgd5dheod2ckMX6TEpMDn+T2XtD8+nfXsSvX3ky9jD6vcUIPXwWR07FYOTUzw0EoM+/jpiC77ZsxAyhJVEV29MsNRKEI4oM2l8im3pBrd1nwhB75BC0M7G+GQhilx23AJgcFI5fCOW/Lsj/89aHyM19soj289UhBiLQ8Ycx74licFswGw2J/NA3Ye8cQg7sMSeC9h/VNwNBRBTaZ5Kt+/EM/NNww1bEc2+7IyOjCHl5pdi06zh+/bJxK2PE+FkI8luLuR/NRkvyElYIOoaCINbHF7D+k5KzA02ytdc0/JcWBhgFm3hm+GT880vvsp+9/eFy+HzpgVmT/oL266ZzBh3dWauNHKxN80ZX1tdGv1cqa2Pkb3amDDQN/16z/At1PKJK8czI6WzQOajD6VPfXXjXMxjzpr6JTO/n0HB8JisCfbSpy4wc/DB2nuwbj0mFNncjvKJLWR9KyYALdegUFtl3jjmbJwaZC35//mPcXKzb9iNe/uArjF97EEe2rxN7MAt8R+JR+pesEHS0R36IztxA1tnOQFPUIt5/UkJL+YTWpb4ZCIIsJF3exb5eFwowfuE6VgA6SDBuyzdjWfAh/Gni55ixvWf20PqIq31jHM1nPmCFoENzxR01ByejU4L+AHujSfVB8abXjHwnNd+lD7LYl0zu7QC+uFAE75Aj+O0YN1YIEz5Zj8DQE3jzM3/88V0PsQKqf32c/zRREPeCXmWFoIPmONzfMAyV378B9fWVrOOVROedQLQlLEXNoako8X8B+YHyCyLSnO0A6Fge7mIpcdsSjsAdP8Ij8ABmLA3G7BUh8N4chi27T2Gm91b8++tz8frynfCINC5DQ/eH9uUS7dELWDEQXTc8REHoqAx9E6pz7lBfWwlttpnbFuYHiTkMFT3anABoszZAm+GLh7fXo+PWOnSkrRX+mldDneKDduG+6mRvtF9dJgTWC23xnmi9sgQtMV+gOXoRWiI/Q/OlT9B0caH4Hg0R81F/wg21h6agcvs4lAQMN3jfjOC/GqVdaszaMIS2FKKj/rgbSIZQdr0Xcg5TvLdhmtdmTFwShBfdvPEvr8zCs3PXYH5YKn+dgPelAmSsfEkURNm2N1kx6Cj75mUDJ+tDASgNHomyTaNQSgSNROk3I1Aa+BJKNlJwXjC6xp4kfjefTb9U0KH9Zm0pRLbtlp02HROE8dGJLMzem4h5h1Kw+PJ9/nv9iAj5UhREzornhKLBcAxDn+pdb7DOdgaO7/dn0y4VO27V9Ubb0FhB0Awa7iZKYePJyL5io/rAZFYMhDr6b6yzlU6x/3CsPy/fMQlE/20AdMYKQtP9k/jXy91IKSStf0cURN7a4ei+YbrXUnViGut0pZLzzVh8f1zeGdfixqWPLNi4lGyPws/Y2r1/e18u0Xj6fVYMOjQxC1B38G2UBY9ggyAXJQEvoizoZZRvHoVC/xFI/nY24rf9DTE7PselnZ44t3slIvasxfEDAdh/ZBeCwiPhaYfOqP3ZFm5tTKaUKXWm8L5cgNu9lcuiwIGboPpQbtJ57XM8jP9YFEr75flouzAHrefc0BwxE02nZ0B18j0xZ1Edn4ZGAfop/l/4PX3eHD4TLWdmofX8bLRf/ADtUfOhiV2Ahwkfi83dzpTF6O7tOOsQnlMU+Ap+2OHLpsMR5OpNmetvJgVBNdAV8co+HuHUt8v7cgl1TM/UOY6upAXojJyG7mTT3zFJuiCgqBl4lPIZ/zmDNnkRGk++j5KQsWLFl97PNzyRTYO9WRln5fEIZHTYBndTpUBO1gmiInQCGxyi48dRUO/5Mx6eHsd+PiDCX3pX/Dx0pxpPwukj3RPt0e6oOfSukBuMRvaKnnfSEe83hX1/R3D6rpUHqJA1OMERSzEBs0Sn5/oMQ1cqP1lGDmi9SFO4G8q/Hy9WbPUF0J+Qo8fZd7c3Nh+xRHY4R8XeXCl8+8PRPsc3nBh8FNRqhFyAiqWaw1PEbnNdUTAY4Vs92fd2BGG5gx/VOKggahR+TCPVylPWjhOdT9m1USBtgHKc5rNzULFzAvLX9VRgzSVzxQsIC/W3S6vBXGo1EhzTSKb0Jui+vSF9gWiPcWeDaxaUC1xZiNoj01C8aQxyVpqXC+jIXDkM0QFu2L9nC3wuZLLv6igODNDU1DezBFHRpuyjnml845bPCDEoRd+M7lsPOhhdQhO0LXIB6o5OR8l34watC/SHmr1RgXNxKDQQQccvYFmUfVZaWUNVu4RHPZMpPZc4tn1NX6Dy1ryI8h1voVqo9dcdmY66Y9NR+8NUVB+cLLZG7m9+HfnrBQH1aw0Mxi2fkbgUtEDMAQJORWNplHKKg4EwN3cgM1sQTdrH4ggZ90AlsPr8LWStGMYG0lrSfUbhQvBH2Lv3W/idjlNUfcBcvOPK0dI5cMtC38wWBFlMiTL2kDDFye+82cCaS/qq0Tgf/InYLe4bngRPO20eKidxZe290TPPLBIE9XD5KWy3W31WXMpF6pqxbLA50le9inObPxUEsAO+EYIAFD6gZykbr9fgpwF6JTmzSBBkhU3KWSXOse5sKmL9ZxoFP8v7eVz9egLCQ5Yg9MAurI9IHnIC6A83I2ows1gQZHTKPPcCSsLnQgY2nowSWXcmBV5R8pySq1SO3lH1Rssys0oQdPIOrQnkXsSF4wkQior+J+WYa1YJgozatbLPvXRhMXT8YrXavD4HzqwWBJkznMDztJH64Ml+UdaYTYKg+it1enAv5sL+HBbqdpa1KYzNJkGQUX2CmjfcC7qwH4FCDGgppq1msyDIqCds7VVXJdNR0ElIbV0/9UbDNpNEEGS0TxFNz+Je2IV8rBJ8ThOZpDLJBEFW1toFr7ih3dmjJGicgkaipTRJBUFW0KhV/JqOIYHgY9pbVGqTXBBkJApXTiEfy2LlEQOZLIIgo+LDJ4FPkAvroTqD1MWEvskmCDLaDNXV+pCOdUnVklYgOZNVEGTUJHX1U9gO9TO0dUrTtBzIZBcEGXVeuXo0rYd6IKXodDLH7CIIMupSpbEP14CY+dBAFY1N2NodbYnZTRA6o1FS19D54NAQti2jltaa3QVBRtkfrSLiHOGiZ3KLtfMZbDWHCEJntMEZ/SVwTnkaocq3NdPepDSHCoKMJu7SiYBPc0cWdUHT7GhLJ8TKYQ4XhM6atY+xL+vpK0ao9WXJugm5TTGC0FllWzf2PwXCICGYu7zOnqY4QeisRv1IbH/TngacQ50RSgtVps1Zhe0oU6wgdEYbXNBONs48LkLzRGjnlsE261CCKV4QOqPKJ50vSfUM2laPc7ySoHek3d5yGx4qorJorjmNIPSto/tnsddz+816sTePC4gjoMXQtEMsbQpqah9IpZtTCkLfaLc8artfvt+KrWm19p2cIzyLjhigXeXpHbi9o53NnF4Q/Y16+Cg49Fd6prAFuzMa4JdcZVPllK6l7nY6sIzOqKJjiegZ/Q8fGQo25ARhyqgOQhOB6RRbOtqY6iN0CDrt632ltE2E/k2/o8/oO/RdumagfR2Hmj01gnCZeeYShMv0DPh/NS4yXgWE2BEAAAAASUVORK5CYII=" InformativeScreenshot="da2d63f19f99ed8f75dbc4cc0ecc052b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Products | Pega Studio Training Web Application' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp BrowserType="Edge" IconBase64="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" InformativeScreenshot="a76a746a170b191148d9e980b852d295.png" Selector="&lt;html app='msedge.exe' title='Home | Pega Studio Training Web Application'/&gt;" Url="https://training.openspan.com/home" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <Sequence sap2010:Annotation.AnnotationText="This extracts structured information from the site and saves it to a datatable. " DisplayName="Table Extraction" sap:VirtualizedContainerService.HintSize="476,940" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="434,476" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" Version="V1">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,260" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NExtractData ContinueOnError="True" DataTable="[dtSeasonings]" DisplayName="Extract Table Data" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest' /&gt;" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NExtractData_1" MaximumResults="100">
+                <uix:NExtractData.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="313, 325, 740, 467" FriendlyName="'Product ▾PriceProduct I…'" FullSelectorArgument="&lt;webctrl id='shopping_beverages_products' tag='TABLE' /&gt;" InformativeScreenshot="86efbb4b9c2bfe8bb10176099dc46040.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Seasonings | Pega Studio Training Web Application' /&gt;" SearchSteps="Selector" Text="Product ▾&#xA;Price&#xA;Product ID&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;Aniseed Syrup&#xA;10.00&#xA;3&#xA;&#xA;Chef Anton's Cajun Seasoning&#xA;22.00" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='TABLE' type='' /&gt;" />
+                </uix:NExtractData.Target>
+              </uix:NExtractData>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp BrowserType="Edge" IconBase64="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" InformativeScreenshot="95bd7d28a6ab0297004d2769b705d71c.png" Selector="&lt;html app='msedge.exe' title='Seasonings | Pega Studio Training Web Application'/&gt;" Url="https://training.openspan.com/product/seasonings" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+      <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[dtSeasonings]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="434,301" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+        <ui:ForEachRow.Body>
+          <ActivityAction x:TypeArguments="sd:DataRow">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="272,153" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[row(0).ToString]" />
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEachRow.Body>
+      </ui:ForEachRow>
+    </Sequence>
+  </Sequence>
+</Activity>
